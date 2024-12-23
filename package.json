@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev-no-turbo": "next dev",
+    "dev-turbo": "next dev --turbopack",
+    "bun:dev-turbo": "bun --bun next dev --turbopack",
+    "bun:dev-no-turbo": "bun --bun next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.2"
+    "ts-package-example": "git@github.com:ctjlewis/ts-package-example.git"
   },
   "devDependencies": {
     "typescript": "^5",
